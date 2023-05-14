@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #000;
+  }
+  
+  #background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .social-icons {
+    
+    z-index: 1;
+    position: relative;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 0.5em;
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .social-icons a:hover {
+    color: #ccc;
+  }
+  .social-icons a:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  
+  h1:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+  }
+
+ 
+  .wave {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .wave:hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    animation: wave 0.5s linear;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-10px) scale(0.9);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  /* querys */
+
+  @media only screen and (min-width: 768px) {
+  }
+ @media only screen and (max-width: 767px) {
+    }
+@media only screen and (max-width: 767px) {
+        h1 {
+          font-size: 20px;
+        }
+      }
